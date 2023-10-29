@@ -8,8 +8,7 @@ class player:
         self.letter = letter
 
 
-    def get_move(self, game):
-        pass
+    
 
 
 class RandomComputerPlayer(player):

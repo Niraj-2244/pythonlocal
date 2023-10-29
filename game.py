@@ -29,8 +29,7 @@ class TicTacToe:
     def num_empty_squares(self):
         return self.board.count(' ')
     
-    # def print_game():
-    #     pass
+   
     
     def make_move(self, square, letter):
         if self.board[square] ==' ':
@@ -53,7 +52,7 @@ class TicTacToe:
             return True
         
         if square % 2==0:
-            diagonal1 = [self.board[i] for i in [0,  4, 8]]
+            diagonal1 = [self.board[i] for i in [0,  4, 8]]:
             if all([spot == letter for spot in diagonal1]):
                 return True
             diagonal2 = [self.board[i] for i in [0,  4, 8]]
