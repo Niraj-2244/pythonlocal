@@ -52,7 +52,7 @@ class TicTacToe:
             return True
         
         if square % 2==0:
-            diagonal1 = [self.board[i] for i in [0,  4, 8]]:
+            diagonal1 = [self.board[i] for i in [0,  4, 8]]
             if all([spot == letter for spot in diagonal1]):
                 return True
             diagonal2 = [self.board[i] for i in [0,  4, 8]]
@@ -100,4 +100,4 @@ if __name__ == 'main':
     x_player = HumanPlayer('X')
     o_player = RandomComputerPlayer('O')
     t = TicTacToe()
-    play(t, x_player, o_player, print_game=True)
+play(t, x_player, o_player, print_game=True)
